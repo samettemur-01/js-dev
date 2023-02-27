@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(237, 219, 172)
+}
+
+body{
+    text-align: center;
+    margin-top: 15%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+h2{
+    margin: 25px;
+    
+}
+
+select,option,input{
+    background-color: white ;
+    border-radius: 6px; 
+}
+
+button{
+    background-color: #212020; 
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}

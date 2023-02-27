@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ödev.css">
+    <script>
+        var years = [];
+		for (var i = 2023; i >= 1990; i--) {
+			years.push(i);
+		}
+    </script>
+</head>
+<body>
+    <h2>- Kira artış hesaplama -</h2>
+    <label for="yearSelect">evde oturmaya başladığınız yıl:</label>
+	<select id="yearSelect">
+		<!-- yıl seçeneklerini döngü ile oluşturuyoruz -->
+		<option value="">Seçiniz</option>
+		<script>
+			for (var i = 0; i < years.length; i++) {
+				document.write('<option value="' + years[i] + '">' + years[i] + '</option>');
+			}
+		</script>
+	</select>
+
+<br><br>    
+
+    <label for="numberSelect">evde oturmaya başladığınız ay:</label>
+	<select id="numberSelect">
+		<!-- 1-10 arasındaki sayı seçeneklerini döngü ile oluşturuyoruz -->
+		<option value="">Seçiniz</option>
+		<script>
+			for (var i = 1; i <= 12; i++) {
+				document.write('<option value="' + i + '">' + i + '</option>');
+			}
+		</script>
+	</select>
+
+    <br><br>
+    
+    <label for="ödenenmiktar">en son ödediğiniz kira miktarı: </label>
+        <input type="girilensayı">
+
+        <br><br>
+	<button onclick="calculate()">Hesapla</button>
+
+    <br><br>
+	<label id="results"></label>
+    
+</body>
+</html>
